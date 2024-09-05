@@ -1,8 +1,12 @@
 @charset 'UTF-8';
-
 * {
     padding: 0;
     margin: 0;
+}
+
+:root {
+    --paragrafo: "Sriracha", cursive;
+    --header: "Passion One", sans-serif;
 }
 
 /*
@@ -33,6 +37,108 @@ FONTES CONFIG
     font-style: normal;
 }
 
-:root {
-    --p: font-family ;
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    padding: 60px;
+}
+
+header > h1 {
+    font: 10vw var(--header);
+    font-variant: small-caps;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+header > h2 {
+    font: 16px "Arial", sans-serif;
+    color: white;
+}
+
+header > h2 > a {
+    text-decoration: none;
+    color: white;
+    font: bolder 16px "Arial", sans-serif;
+    transition-duration: .3s;
+
+}
+
+header > h2 > a:hover {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+p {
+    display: block;
+    font: 4vw var(--paragrafo);
+    padding-bottom: 2em;
+}
+
+article {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 3.5vw;
+    box-shadow: 1px -4px 5px rgba(0, 0, 0, 0.267);
+}
+
+article#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+article#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+article.img {
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+article.img > p {
+    display: inline-block;
+
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
+    text-align: left;
+    
+    background-color: rgba(0, 0, 0, 0.445);
+    margin-right: 160px;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font: 16px var(--header);
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    transition-duration: .3s;
+}
+
+footer > a:hover {
+    background-color: white;
+    color: black;
 }
